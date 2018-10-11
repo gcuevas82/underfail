@@ -117,12 +117,25 @@ def under_there():
     print('no: leave key')
     choice = input ('Do you want the key? ')
     if choice == 'yes':
-            print('You may proceed to the hallway...')
-            hallway()
+        move_forward()
+            
         
     elif choice == 'no':
             print('You cannot reach the surface without a key....')
             the_ruins() 
+ 
+def move_forward():
+    print('north: hallway')
+    print('stay: dontgo')
+    choice = input ('What would you like to do?  ')
+    if choice == 'stay':
+        print('If you stay here, you will be here forever')
+        while choice == 'stay':
+            print('north')
+            print('stay')   
+            choice = input ('The choice is yours... ')
+    print('You may proceed to the hallway...')  
+    hallway()
  
 def hallway():
             
