@@ -1,2 +1,3 @@
 # underfail
-Alt HW 
+python text game, based on Undertale
+
